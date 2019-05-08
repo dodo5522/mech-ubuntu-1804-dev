@@ -1,0 +1,18 @@
+{
+  "box": "dodo5522/ubuntu-dev",
+  "box_version": "1.0.1",
+  "name": "mechtest",
+  "url": "https://vagrantcloud.com/dodo5522/boxes/ubuntu-dev/versions/1.0.1/providers/vmware.box",
+  "provision": [
+    {
+      "type": "file",
+      "source": "./temporary.txt",
+      "destination": "/tmp/temporary.txt",
+    },
+    {
+      "type": "shell",
+      "path": "./apt.sh",
+      "args": [],
+    },
+  ]
+}
