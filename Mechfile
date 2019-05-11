@@ -1,8 +1,8 @@
 {
-  "box": "dodo5522/ubuntu-dev",
+  "box": "dodo5522/ubuntu-1804-dev",
   "box_version": "1.0.1",
-  "name": "mechtest",
-  "url": "https://vagrantcloud.com/dodo5522/boxes/ubuntu-dev/versions/1.0.1/providers/vmware.box",
+  "name": "ubuntu-1804-dev",
+  "url": "https://vagrantcloud.com/dodo5522/boxes/ubuntu-1804-dev/versions/1.0.1/providers/vmware.box",
   "provision": [
     {
       "type": "file",
