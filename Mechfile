@@ -6,12 +6,22 @@
   "provision": [
     {
       "type": "file",
-      "source": "./temporary.txt",
-      "destination": "/tmp/temporary.txt",
+      "source": "./.ssh/id_rsa",
+      "destination": "/tmp/id_rsa",
+    },
+    {
+      "type": "file",
+      "source": "./.ssh/id_ecdsa_nopass",
+      "destination": "/tmp/id_ecdsa",
     },
     {
       "type": "shell",
       "path": "./apt.sh",
+      "args": [],
+    },
+    {
+      "type": "shell",
+      "path": "./credentials.sh",
       "args": [],
     },
   ]
