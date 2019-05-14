@@ -24,5 +24,10 @@
       "path": "./credentials.sh",
       "args": [],
     },
+    {
+      "type": "shell",
+      "path": "./dotfiles.sh",
+      "args": [],
+    },
   ]
 }
