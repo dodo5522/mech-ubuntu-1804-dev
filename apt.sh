@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# To install the latest vim
+sudo add-apt-repository -y ppa:jonathonf/vim
+sudo apt remove -y vim
+
 # To build nodejs from yocto, you will need the following packages:
 # https://github.com/imyller/meta-nodejs
 # https://github.com/imyller/meta-nodejs/issues/45
@@ -18,7 +22,7 @@ sudo apt install -y \
 
 # for my own dev env
 sudo apt install -y \
-    byobu python-pip python3-pip bpython bpython3 exuberant-ctags
+    byobu python-pip python3-pip bpython bpython3 exuberant-ctags sshfs vim
 
 # remove no needed packages
 sudo apt autoremove -y
