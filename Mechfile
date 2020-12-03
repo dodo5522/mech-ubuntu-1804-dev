@@ -6,6 +6,11 @@
   "provision": [
     {
       "type": "file",
+      "source": "./.ssh/id_symax",
+      "destination": "/tmp/id_symax",
+    },
+    {
+      "type": "file",
       "source": "./.ssh/id_rsa",
       "destination": "/tmp/id_rsa",
     },
