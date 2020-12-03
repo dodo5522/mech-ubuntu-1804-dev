@@ -1,9 +1,14 @@
 {
-  "box": "dodo5522/ubuntu-1804-dev",
-  "box_version": "1.0.1",
-  "name": "ubuntu-1804-dev",
-  "url": "https://vagrantcloud.com/dodo5522/boxes/ubuntu-1804-dev/versions/1.0.1/providers/vmware.box",
+  "box": "bento/ubuntu-18.04",
+  "box_version": "202010.24.0",
+  "name": "mech-ubuntu-1804-dev",
+  "url": "https://vagrantcloud.com/bento/boxes/ubuntu-18.04/versions/202010.24.0/providers/vmware_desktop.box",
   "provision": [
+    {
+      "type": "file",
+      "source": "./.ssh/id_symax",
+      "destination": "/tmp/id_symax",
+    },
     {
       "type": "file",
       "source": "./.ssh/id_rsa",
